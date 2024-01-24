@@ -5,6 +5,10 @@
         "xstring": "cpp",
         "utility": "cpp",
         "xtree": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iterator": "cpp",
+        "initializer_list": "cpp",
+        "type_traits": "cpp",
+        "xutility": "cpp"
     }
 }
