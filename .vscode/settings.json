@@ -9,6 +9,13 @@
         "iterator": "cpp",
         "initializer_list": "cpp",
         "type_traits": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "map": "cpp",
+        "queue": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "atomic": "cpp"
     }
 }
