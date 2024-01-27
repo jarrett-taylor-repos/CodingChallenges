@@ -16,6 +16,7 @@
         "deque": "cpp",
         "ranges": "cpp",
         "span": "cpp",
-        "atomic": "cpp"
+        "atomic": "cpp",
+        "string": "cpp"
     }
 }
