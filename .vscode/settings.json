@@ -18,6 +18,8 @@
         "span": "cpp",
         "atomic": "cpp",
         "string": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "ios": "cpp",
+        "xiosbase": "cpp"
     }
 }
