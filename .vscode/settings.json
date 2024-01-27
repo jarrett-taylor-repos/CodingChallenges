@@ -17,6 +17,7 @@
         "ranges": "cpp",
         "span": "cpp",
         "atomic": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "stack": "cpp"
     }
 }
