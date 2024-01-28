@@ -32,13 +32,8 @@ int solution(vector<int> &A) {
     int rightDiff = 0;
 
     //middle distance point is found
-    //leftstart-currleft < r
-    //(leftStartValue-A[left-1] > A[left-1] - rightStartValue) ||(A[right+1] - rightStartValue > leftStartValue-A[right+1])
-    while(
-        (leftStartValue-A[left-1] > A[left-1] - rightStartValue)
-        ||
-        (A[right+1] - rightStartValue > leftStartValue-A[right+1])
-    ) {
+    while(left+1 != right) {
+        //get the next value for each pointer and calculate difference from start node
         int leftNext = A[left+1];
         int rightNext = A[right-1];
 
@@ -46,16 +41,13 @@ int solution(vector<int> &A) {
         int rightDiff = rightStartValue-rightNext;
 
         //move closer to middle
-        (leftDiff < rightDiff) ? right-- : left++;
+        (leftDiff > rightDiff) ? right-- : left++;
     }
 
     leftDiff = A[left]-leftStartValue;
     rightDiff = rightStartValue-A[right];
 
-    if((size-left) == (size-right)) { //checks to see how they are split up
-        if(size % 2 == 0) { //if even length, longest board needed to cover gap 
-            return Max(leftDiff, rightDiff);
-        }
+    if(((size-left) == (size-right)) && size % 2 != 0) { //checks to see how they are split up
         return Min(leftDiff, rightDiff);
     }
     return Max(leftDiff, rightDiff);

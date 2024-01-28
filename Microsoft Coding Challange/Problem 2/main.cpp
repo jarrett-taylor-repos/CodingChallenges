@@ -46,7 +46,7 @@ int solution(vector<int> &T) {
 }
 
 int main() {
-    vector<int> T = {10000};
+    vector<int> T = {3, 1, 2};
     cout << solution(T) << endl;
     return 0;
 }
