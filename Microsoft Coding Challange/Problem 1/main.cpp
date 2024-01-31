@@ -47,9 +47,6 @@ int solution(vector<int> &A) {
     leftDiff = A[left]-leftStartValue;
     rightDiff = rightStartValue-A[right];
 
-    if(((size-left) == (size-right)) && size % 2 != 0) { //checks to see how they are split up
-        return Min(leftDiff, rightDiff);
-    }
     return Max(leftDiff, rightDiff);
 }
 
@@ -61,6 +58,6 @@ int main() {
     cout << solution(a) << endl;
     cout << solution(b) << endl;
     cout << solution(c) << endl;
-    //cout << solution(d) << endl;
+    cout << solution(d) << endl;
     return 0;
 }

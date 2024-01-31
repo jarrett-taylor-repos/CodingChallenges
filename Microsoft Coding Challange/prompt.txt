@@ -1,0 +1,39 @@
+2nd problem 
+T = [3, 1, 2]
+T[k] = the amount of hours it take to make a food.
+You can only work on a food for one hour at a time per food.
+Once time left working on an elemnet reaches 0, it gets deliverd to the customer instantly.
+
+How many total hours does it take to deliver food to all customers.
+
+3(-1)
+1(-1) -> delivered  at hour 2 
+2(-1)
+3(-2)
+2(-2) -> delivered at ghour 5 
+3(-3) -> delivered at hour 6
+
+6+5+2 = 13 hours
+
+
+
+-----------------------
+1st problem
+H = [11, 20, 15]
+H[i] = represents a hole in a table at that index 
+You have to find the 2 (minimum) equal length boards, that will cover all of the whole on the table to make it usable.
+
+[11, 20, 15] => 4
+
+
+H = [0, 16, 18, 30, 33, 34, 40, 44]
+
+sort the array, have a left pointer and right pointer
+move toward middle if total diff is smaller
+
+[0, 16, 18, 30, 33, 34, 40, 44]
+left                        right
+left                    right(4)
+left                right(10)
+    ...............
+    left(18) right(14)

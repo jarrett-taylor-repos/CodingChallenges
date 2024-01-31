@@ -46,7 +46,7 @@ int solution(vector<int> &T) {
 }
 
 int main() {
-    vector<int> T = {3, 1, 2};
+    vector<int> T = {7,7,7};
     cout << solution(T) << endl;
     return 0;
 }
