@@ -31,9 +31,6 @@ int solution(vector<int> vect) {
     int diff = max - min;
     int maxLength = (diff/2) + 1;
 
-    int relativeDistMin = maxLength-min;
-    int relativeDistMax = max-maxLength;
-
     int numClosestToMaxLenght = max;
     int minDiff = maxLength;
 
