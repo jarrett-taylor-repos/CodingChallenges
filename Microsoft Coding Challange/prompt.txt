@@ -37,3 +37,17 @@ left                    right(4)
 left                right(10)
     ...............
     left(18) right(14)
+
+
+--------------
+[0, 44, 16, 30, 33, 40, 18]
+-loop through the list, find smallest and largest value
+
+get the difference/2 => this is max length of plank 
+44 - 0 / 2 => 22 
+
+-loop through the list again, find number closest to max plank length 
+closest to 22 => 18
+
+-return min of difference from min and max from closest to middle value 
+min(18-0, 40-18) => min(18, 22) => 18
