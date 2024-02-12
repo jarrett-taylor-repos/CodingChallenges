@@ -13,32 +13,31 @@ int trap(vector<int>& height) {
     if(size <= 2) return 0;
 
     int trapped = 0;
-    for(int i = 1; i < size-1; i++) {
-        int currHeight = height[i];
-        int leftMax = currHeight;
-        int rightMax = currHeight;
+    int leftMax = height[0];
+    int rightMax = height[size-1];
+    
+    int i = 1;
+    int j = size-2;
 
-        int index = i-1;
-        while(index != -1) {
-            int testValue = height[index];
-            if(testValue >= leftMax) {
-                leftMax = testValue;
+    while(i <= j) {
+        int currHeight;
+        if(leftMax < rightMax) {
+            currHeight = height[i];
+            if(currHeight >= leftMax) {
+                leftMax = currHeight;
+            } else {
+                trapped += (leftMax - currHeight);
             }
-            index--;
-        }
-
-        index = i+1;
-        while(index != size) {
-            int testValue = height[index];
-            if(testValue >= rightMax) {
-                rightMax = testValue;
+            i++;
+        } else {
+            currHeight = height[j];
+            if(currHeight >= rightMax) {
+                rightMax = currHeight;
+            } else {
+                trapped += (rightMax - currHeight);
             }
-            index++;
+            j--;
         }
-
-        int maxAbleToStore = Min(leftMax, rightMax);
-        int valueStored = maxAbleToStore - currHeight;
-        trapped += valueStored;
     }
 
     return trapped;
