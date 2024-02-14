@@ -3,7 +3,7 @@
 using std::string, std::cout, std::endl;
 
 string convert(string s, int numRows) {
-    if(!numRows || !s.length() || numRows == 1) return s;
+    if(!s.length() || numRows < 2) return s;
 
     int len = s.length();
     string zigzag = "";
