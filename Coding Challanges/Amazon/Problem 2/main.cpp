@@ -31,3 +31,33 @@ int main() {
 
     return 0;
 }
+
+
+/*
+Given 
+days = [7, 2, 6, 4, 5]
+k = 8
+where days[i] is the number of races in a day 
+each race on days[i] represent its value in points 
+
+k = the number of consecutive races you can do 
+
+GOAL: return the maximum number of points you can achieve
+
+Notes:
+ - you can start on any race on any day and end on any race on any day 
+ - after you reach days[n] the , days repeats
+
+EX. 
+
+days = [2, 3, 2]
+k = 4
+
+day 0            |           day 1         |          day 2
+race 1 race 2    |   race 1 race 2 race 3  |  race 1  race 2
+
+            2   +        1   + 2 +    3    =   8
+
+
+return 8 , being the maximum number of points
+*/

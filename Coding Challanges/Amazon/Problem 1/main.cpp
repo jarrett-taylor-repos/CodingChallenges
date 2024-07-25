@@ -29,3 +29,21 @@ int reduceGifts(vector<int> prices, int k, int threshold) {
 int main() {
     return 0;
 }
+
+/*
+Given 
+gifts = [9, 7, 6, 2, 7, 2]
+k = 2
+threshold = 13
+
+return the minimum number of elements to remove from gifts, such that the sum of any K elements is less than or equal to threshold
+
+
+9 + 7 > 13
+remove 9 
+7 + 7 > 14
+remove 7 
+7 + 6 = 13
+
+2 is the answer after removeing 9 and 7 
+*/
